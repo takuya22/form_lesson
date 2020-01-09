@@ -25,7 +25,7 @@
 
 .container {
   background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  box-shadow: 0 0 4px 0 #0000002e;
   border-radius: 4px;
   padding: 48px 64px;
   margin: 0 0 32px;
@@ -39,7 +39,8 @@
 }
 
 input:focus {
-  box-shadow: 0px 0px 4px 0px rgba(1,191,189,0.4);
+  box-shadow: 0px 0px 4px 0px #01bfbd66;
+  background-color: #fff;
   outline: none;
 }
 
@@ -172,7 +173,12 @@ input:focus {
 .sample-label {
   position: relative;
   padding: 3px 3px 3px 20px;
+  margin-left: 15px;
 } 
+
+.sample-label:first-of-type {
+  margin-left: 0;
+}
 
 .sample-label::after,.sample-label::before {
   content: "";
@@ -291,17 +297,25 @@ input {
 }
 
 textarea:focus {
-  box-shadow: 0px 0px 4px 0px rgba(1,191,189,0.4);
+  box-shadow: 0px 0px 4px 0px #01bfbd66;
   outline: none;
 }
 
 .form-btn {
   background-color: #01BFBD;
+  border: none;
+  border-radius: 3px;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: 13px;
   padding: 13px;
   text-align: center;
+  transition: .3s;
+}
+
+.form-btn:hover {
+  background-color: #009b98;
 }
 
 .agree-text {
