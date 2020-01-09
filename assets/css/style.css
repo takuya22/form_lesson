@@ -38,6 +38,11 @@
   text-align: center;
 }
 
+input:focus {
+  box-shadow: 0px 0px 4px 0px rgba(1,191,189,0.4);
+  outline: none;
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;
@@ -49,17 +54,27 @@
   color: #fff;
 }
 
+.facebook-color:hover {
+  background-color: #2c4375;
+}
+
 .google-color {
   background-color: #fff;
   color: #dd4b39;
+}
+
+.google-color:hover {
+  background-color: #f2f2f7;
 }
 
 .btn {
   border: solid 1px #d9d9d9;
   border-radius: 3px;
   font-size: 13px;
+  font-weight: 500;
   padding: 13px;
   text-align: center;
+  transition: .3s;
   margin-left: 8px;
 }
 
@@ -125,6 +140,7 @@
 }
 
 .input-form {
+  background-color: #f2f6f7;
   box-sizing: border-box;
   border: solid 1px #d9d9d9;
   border-radius: 3px;
@@ -144,8 +160,49 @@
 }
 
 .gender {
+  color: #545658;
+  display: flex;
   text-align: left;
-  vertical-align: auto;
+}
+
+.radio {
+  display: none;
+}
+
+.sample-label {
+  position: relative;
+  padding: 3px 3px 3px 20px;
+} 
+
+.sample-label::after,.sample-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
+}
+
+.sample-label::after {
+  background-color: #f2f6f7;
+  border: solid 1px #d9d9d9;
+  border-radius: 50%;
+  left: 0;
+  height: 14px;
+  width: 14px;
+}
+
+.sample-label::before {
+  background-color: #01BFBD;
+  border-radius: 50%;
+  left: 4px;
+  opacity: 0;
+  height: 8px;
+  width: 8px; 
+  z-index: 2;
+}
+
+.radio:checked + .sample-label:before {
+  opacity: 1;
 }
 
 input {
@@ -157,7 +214,7 @@ input {
 }
 
 .country select {
-  background-color: #fff;
+  background-color: #f2f6f7;
   border: none;
   font-size: 13px;
   outline: none;
@@ -182,8 +239,60 @@ input {
   margin-bottom: 10px;
 }
 
+.checkbox {
+  display: none;
+}
+
+.skill {
+  color: #545658;
+}
+
+.skill {
+  position: relative;
+  padding: 0 0 0 25px;
+}
+
+.skill::before,.skill::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
+}
+
+.skill::before {
+  background-color: #fff;
+  border: solid 1px #d9d9d9;
+  left: 0;
+  height: 17px;
+  width: 17px; 
+}
+
+.skill::after {
+  background-color: transparent;
+  border: solid 3px #01BFBD;
+  border-top: transparent;
+  border-left: transparent;
+  height: 16px;
+  left: 6px;
+  opacity: 0;
+  top: -5px;
+  transform: rotate(45deg);
+  width: 8px;
+  z-index: 2;
+}
+
+.checkbox:checked + .skill::after {
+  opacity: 1;
+}
+
 .textarea {
   height: 100px;
+}
+
+textarea:focus {
+  box-shadow: 0px 0px 4px 0px rgba(1,191,189,0.4);
+  outline: none;
 }
 
 .form-btn {

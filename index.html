@@ -40,12 +40,15 @@
                   <input type="text" class="full input-form" required>
                 </div>
               </li>
-              <li class="gender-container input-container">
+              <li class="gender-container input-container half">
                 <p class="label-text">性別</p>
                 <p class="gender">
-                  <label><input type="radio" name="gender" value="男性">男性</label>
-                  <label><input type="radio" name="gender" value="女性"> 女性</label>
-                  <label><input type="radio" name="gender" value="その他">その他</label>
+                  <input class="radio" type="radio" name="gender" value="1" id="men">
+                  <label for="men" class="sample-label">男性</label>
+                  <input class="radio" type="radio" name="gender" value="2" id="women">
+                  <label for="women" class="sample-label">女性</label>
+                  <input class="radio" type="radio" name="gender" value="3" id="other">
+                  <label for="other" class="sample-label">その他</label>
                 </p>
               </li>
               <li class="country-container input-container">
@@ -83,16 +86,16 @@
                 <p class="label-text">希望コース
                 </p>
                 <div class="check">
-                  <input type="checkbox">
-                  フロントエンド<br>
+                  <input type="checkbox" class="checkbox" id="front">
+                  <label for="front" class="skill">フロントエンド</label>
                 </div>
                 <div class="check">
-                  <input type="checkbox">
-                  バックエンド<br>
+                  <input type="checkbox" class="checkbox" id="back">
+                  <label for="back" class="skill">バックエンド</label>
                 </div>
                 <div class="check">
-                  <input type="checkbox">
-                  アプリ<br>
+                  <input type="checkbox" class="checkbox" id="app">
+                  <label for="app" class="skill">アプリ</label>
                 </div>
               </li>
               <li class="limark-container input-container">
@@ -108,7 +111,7 @@
                 <a href="#" class="link-color">利用規約</a>
                 と
                 <a href="#" class="link-color">プライバシーポリシー</a>
-                に同意するとします。
+                に同意するものとします。
               </p>
           </footer>
         </div>
