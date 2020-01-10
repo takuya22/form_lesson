@@ -26,7 +26,7 @@
           <div class="divider">
             <p class="sub-text">アカウント情報</p>
           </div>
-          <footer action="#" method="POST">
+          <form action="#" method="POST">
             <ul class="input-list">
               <li class="name-container input-container">
                 <div class="half name-box">
@@ -65,22 +65,22 @@
               <li class="mail-container input-container">
                 <p class="label-text">Eメール<span class="alert"> ※</span>
                 </p>
-                <input type="text" class="full input-form" placeholder="ex) hoge@example.com" required>
+                <input type="email" class="full input-form" placeholder="ex) hoge@example.com" required>
               </li>
               <li class="phone-container input-container">
                 <p class="label-text">電話番号
                 </p>
-                <input type="text" class="full input-form" placeholder="ex) hoge@example.com"> 
+                <input type="tel" class="full input-form" placeholder="ex) 09012345678"> 
               </li>
               <li class="password-container input-container">
                 <p class="label-text">パスワード<span class="alert"> ※</span>
                 </p>
-                <input type="text" class="full input-form" required>
+                <input type="password" class="full input-form" required>
               </li>
               <li class="password-container input-container">
                   <p class="label-text">パスワード(確認用)<span class="alert"> ※</span>
                   </p>
-                  <input type="text" class="full input-form" required>
+                  <input type="password" class="full input-form" required>
               </li>
               <li class="course-container input-container">
                 <p class="label-text">希望コース
@@ -107,21 +107,15 @@
                 <button type="submit" class="full form-btn">アカウント作成</button>
               </li>
             </ul>
-              <p class="input-container agree-text">アカウントを作成することにより、
-                <a href="#" class="link-color">利用規約</a>
-                と
-                <a href="#" class="link-color">プライバシーポリシー</a>
-                に同意するものとします。
+              <p class="input-container agree-text">アカウントを作成することにより、<a href="#" class="link-color">利用規約</a>と<a href="#" class="link-color">プライバシーポリシー</a>に同意するものとします。
               </p>
-          </footer>
+          </form>
         </div>
       </div>
       <div class="footer-part inner">
         <p class="login-text">
-          すでにアカウントをお持ちですか？
-          <a class="link-color" href="#">ログイン</a>
-        </p>
-        <a class="link-color" href="mail-text">認証メールが届きませんか？</a>
+          すでにアカウントをお持ちですか？ <a class="link-color under-line" href="#">ログイン</a>
+        </p><a class="link-color under-line" href="#">認証メールが届きませんか？</a>
       </div>
     </div>
   </body>

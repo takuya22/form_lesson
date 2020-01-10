@@ -18,11 +18,6 @@
   width: 100%;
 }
 
-.link-color {
-  color: #01A6A4;
-  font-size: 12px;
-}
-
 .container {
   background-color: #fff;
   box-shadow: 0 0 4px 0 #0000002e;
@@ -127,7 +122,7 @@ input:focus {
 }
 
 .name-box {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .name-box:first-child {
@@ -142,7 +137,7 @@ input:focus {
 }
 
 .input-form {
-  background-color: #f2f6f7;
+  background-color: #fbfbfb;
   box-sizing: border-box;
   border: solid 1px #d9d9d9;
   border-radius: 3px;
@@ -190,7 +185,7 @@ input:focus {
 }
 
 .sample-label::after {
-  background-color: #f2f6f7;
+  background-color: #fbfbfb;
   border: solid 1px #d9d9d9;
   border-radius: 50%;
   left: 0;
@@ -221,8 +216,9 @@ input {
 }
 
 .country select {
-  background-color: #f2f6f7;
+  background-color: #fbfbfb;
   border: none;
+  color: #545658;
   font-size: 13px;
   outline: none;
   width: 100%;
@@ -231,7 +227,7 @@ input {
 
 .country::before {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	right: 0.9em;
 	content: '';
 	border-left: 2px solid #d9d9d9;
@@ -268,11 +264,10 @@ input {
 }
 
 .skill::before {
-  background-color: #fff;
   border: solid 1px #d9d9d9;
   left: 0;
-  height: 17px;
-  width: 17px; 
+  height: 15px;
+  width: 15px; 
 }
 
 .skill::after {
@@ -295,9 +290,11 @@ input {
 
 .textarea {
   height: 100px;
+  resize: none;
 }
 
 textarea:focus {
+  background-color: #fff;
   box-shadow: 0px 0px 4px 0px #01bfbd66;
   outline: none;
 }
@@ -309,6 +306,7 @@ textarea:focus {
   color: #fff;
   cursor: pointer;
   display: inline-block;
+  outline: none;
   font-size: 13px;
   padding: 13px;
   text-align: center;
@@ -317,11 +315,28 @@ textarea:focus {
 
 .form-btn:hover {
   background-color: #009b98;
+  border: none;
+  outline: none;
 }
 
 .agree-text {
   font-size: 12px;
   line-height: 16px;
+}
+
+.link-color {
+  color: #01A6A4;
+  font-size: 12px;
+}
+
+.link-color:hover {
+  color: #01bfbd;
+}
+
+.under-line:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-color: #01bfbd;
 }
 
 .footer-part {
